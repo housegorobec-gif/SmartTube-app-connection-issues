@@ -41,7 +41,7 @@ SmartTube (и обычный YouTube на ТВ, приставках, телеф
 
 ### Требования
 
-- Роутер с установленным **z2k** и включённой веб-панелью (по умолчанию `http://192.168.7.1:8088`; адрес и порт можно ввести при запуске — они запоминаются).
+- Роутер с установленным **z2k** и включённой веб-панелью (по умолчанию `http://192.168.1.1:8088`; адрес и порт можно ввести при запуске — они запоминаются).
 - На роутере должен быть модуль проверки **z2k-detect** (если его нет, программа об этом скажет — переустановите z2k или включите модуль в меню **[Y]**).
 - Вход в панель по паролю на время работы нужно **выключить** (меню z2k **[P] → [6]**).
 - Windows 10/11 (в системе уже есть `curl.exe` и PowerShell).
@@ -92,7 +92,7 @@ z2k-tool.bat recheck
 ### Тонкая настройка (`z2k-tool.ini`, для `.bat`)
 
 ```ini
-Router=192.168.7.1
+Router=192.168.1.1
 Port=8088
 Timeout=7        ; таймаут одного запроса, с
 Settle=3         ; пауза после смены стратегии, с
@@ -155,7 +155,7 @@ The router is changed **only** in step 4 and **only** after you confirm. Pressin
 
 ### Requirements
 
-- A router with **z2k** installed and its web panel enabled (default `http://192.168.7.1:8088`; you can enter another address and port at startup — they are remembered).
+- A router with **z2k** installed and its web panel enabled (default `http://192.168.1.1:8088`; you can enter another address and port at startup — they are remembered).
 - The **z2k-detect** check module on the router (if it is missing, the tool tells you — reinstall z2k or enable it in menu **[Y]**).
 - Panel password login must be **turned off** while the tool runs (z2k menu **[P] → [6]**).
 - Windows 10/11 (ships with `curl.exe` and PowerShell).
@@ -206,7 +206,7 @@ Everything goes into a `z2k-YYYYMMDD-HHMM` folder next to the program:
 ### Tuning (`z2k-tool.ini`, for the `.bat`)
 
 ```ini
-Router=192.168.7.1
+Router=192.168.1.1
 Port=8088
 Timeout=7        ; per-request timeout, s
 Settle=3         ; pause after switching strategy, s
